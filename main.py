@@ -12,10 +12,11 @@ if __name__ == '__main__':
     button.clicked.connect(app.quit)
 
     layout = QVBoxLayout(widget)
-    layout.addChildWidget(label)
-    layout.addChildWidget(button)
+    layout.addWidget(label)
+    layout.addWidget(button)
 
     widget.setLayout(layout)
+    widget.resize(300, 200)
     widget.show()
 
     app.exec_()
